@@ -20,6 +20,11 @@
     </header>
     <main>
         <h1><%- menu[4].name %></h1>
+        <div>
+            <% movies.forEach((i) => { %>
+                <img src= <%= i.download_url %> alt="img" width='100px'> <% } ) %>
+        </div>
     </main>
+    
 </body>
 </html>

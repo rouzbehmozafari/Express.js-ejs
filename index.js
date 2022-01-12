@@ -48,7 +48,7 @@ app.get('/contact',(req,res)=>{
     res.render(__dirname+'/views/pages/contact.ejs',{menu})
 })
 app.get('/gallery',(req,res)=>{
-    res.render(__dirname+'/views/pages/gallery.ejs',{menu})
+    res.render(__dirname+'/views/pages/gallery.ejs',{menu,movies})
 })
 app.get('/assets/styles/style.css',(req,res)=>{
     res.sendFile(__dirname+'/assets/styles/style.css')
