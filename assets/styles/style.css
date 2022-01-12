@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    color: white;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+}
