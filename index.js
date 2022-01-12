@@ -1,7 +1,7 @@
 const express = require('express');
 // const menu = require('./assets/db');
 let movies = require('./assets/movies')
-menu = [
+let menu = [
     {
         "name": "Home",
         "url": "/"
@@ -36,19 +36,19 @@ app.use((req,_,next)=>{
     next()
 })
 app.get('/',(req,res)=>{
-    res.render(__dirname+'/views/pages/home.ejs',menu)
+    res.render(__dirname+'/views/pages/home.ejs',{menu})
 })
 app.get('/team',(req,res)=>{
-    res.render(__dirname+'/views/pages/team.ejs',menu)
+    res.render(__dirname+'/views/pages/team.ejs',{menu})
 })
 app.get('/about',(req,res)=>{
-    res.render(__dirname+'/views/pages/about.ejs',menu)
+    res.render(__dirname+'/views/pages/about.ejs',{menu})
 })
 app.get('/contact',(req,res)=>{
-    res.render(__dirname+'/views/pages/contact.ejs',menu)
+    res.render(__dirname+'/views/pages/contact.ejs',{menu})
 })
 app.get('/gallery',(req,res)=>{
-    res.render(__dirname+'/views/pages/gallery.ejs',menu)
+    res.render(__dirname+'/views/pages/gallery.ejs',{menu})
 })
 app.get('/assets/styles/style.css',(req,res)=>{
     res.sendFile(__dirname+'/assets/styles/style.css')
